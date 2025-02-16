@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-<<<<<<< HEAD
     background-color: #fef0f0;
     margin: 0;
     padding: 0;
@@ -81,12 +80,12 @@ body {
     color: white;
     margin-top: 20px;
 }
-=======
+/* 
     background: linear-gradient(to right, #f4edf5, #c9b5e6);
     text-align: center;
     padding: 50px;
     color: rgb(123, 85, 156);
-}
+} */
 
 h1 {
     font-size: 2.5em;
