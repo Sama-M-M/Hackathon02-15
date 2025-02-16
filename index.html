@@ -5,24 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            background-color: purple; /* Purple background */
-            color: white; /* White text color */
-            font-family: Arial, sans-serif; /* Optional: Set a font */
-            text-align: center; /* Center the text */
-            padding: 50px; /* Add some padding */
+            background: linear-gradient(to right, #f4edf5, #c9b5e6); /* Fixed gradient */
+            color: rgb(123, 85, 156); 
+            font-family: Arial, sans-serif; 
+            padding: 50px;
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center; /* Center-align text */
         }
         h1 {
-            font-size: 2.5em; /* Larger font size for the heading */
+            font-size: 2.5em; 
+            margin-bottom: 20px; /* Space below the heading */
+        }
+        .cta-banner {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            max-width: 600px; /* Limit width for better readability */
+            margin-top: 20px; /* Space above the banner */
+        }
+        .cta-banner h2 {
+            font-size: 1.8em; /* Slightly smaller heading */
+            margin-bottom: 10px; /* Space below the heading */
+        }
+        .cta-banner p {
+            font-size: 1.1em; /* Paragraph font size */
+            margin-bottom: 20px; /* Space below the paragraph */
+        }
+        .cta-banner .btn {
+            background-color: #7b559c; /* Purple button */
+            color: white; /* White text */
+            padding: 10px 20px; /* Button padding */
+            font-size: 1em; /* Button font size */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth hover effect */
+        }
+        .cta-banner .btn:hover {
+            background-color: #5a3d75; /* Darker purple on hover */
         }
     </style>
 </head>
 <body>
 
-    <!-- Display "Mental Health Support" -->
     <h1>Mental Health Support</h1>
 
-    <!-- Chatbot will load automatically -->
-    
+    <div class="cta-banner">
+        <h2>Ready to Start Your Journey?</h2>
+        <p>Join Interlinked today and take the first step towards a better life. Let us help you navigate your new chapter with ease.</p>
+        <a href="#" class="btn">Click Widget To Begin</a>
+    </div>
+
     <script>
         window.__ow = window.__ow || {};
         window.__ow.organizationId = "3ba59f11-c11f-4f94-abef-14a3bc971caf";
