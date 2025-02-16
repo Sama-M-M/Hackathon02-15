@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fef0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR STYLING - Moved Above Everything */
+.navbar {
+    background-color: #711671;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #9d209d;
+    border-radius: 5px;
+}
+
+
+.banner {
+    background-color: #ffffff;
+    padding: 100px 20px 60px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 50px; /
+}
+
+.banner h1 {
+    font-size: 3rem;
+    color: #711671;
+    margin: 10px 0;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 200px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #711671;
+    color: white;
+    margin-top: 20px;
+}
