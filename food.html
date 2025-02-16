@@ -7,54 +7,73 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
+            background: linear-gradient(to right, #f4edf5, #c9b5e6);
             text-align: center;
             padding: 50px;
+            color: rgb(123, 85, 156);
         }
         h1 {
-            color: #333;
-            font-size: 2em;
+            font-size: 2.5em;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
-        .cuisine-container {
+        .section {
+            margin-top: 50px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .cuisine-container, .grocery-container {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
+            margin-top: 20px;
         }
-        .cuisine {
+        .cuisine, .grocery {
             text-decoration: none;
             color: white;
-            background-color: #7700ff;
+            background: rgba(0, 0, 0, 0.6);
             padding: 15px 25px;
             border-radius: 10px;
             font-size: 1.2em;
-            transition: 0.3s;
+            transition: transform 0.3s, background 0.3s;
         }
-        .cuisine:hover {
-            background-color: #daa4fc;
+        .cuisine:hover, .grocery:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
-    <h1>What are you feeling?</h1>
-    <div class="cuisine-container">
-        <a class="cuisine" href="foodplaces/Halal.html">Halal</a>
-        <a class="cuisine" href="foodplaces/indian.html">Indian</a>
-        <a class="cuisine" href="foodplaces/korean.html">Korean</a>
-        <a class="cuisine" href="foodplaces/chinese.html">Chinese</a>
-        <a class="cuisine" href="foodplaces/japanese.html">Japanese</a>
-        <a class="cuisine" href="foodplaces/vietnamese.html">Vietnamese</a>
-        <a class="cuisine" href="foodplaces/mediterranean.html">Mediterranean</a>
-        <a class="cuisine" href="foodplaces/mexican.html">Mexican</a>
-        <a class="cuisine" href="foodplaces/pizza.html">Pizza</a>
-        <a class="cuisine" href="foodplaces/burgers.html">Burgers</a>
-        <a class="cuisine" href="foodplaces/cafes.html">Cafes</a>
-
-
-
-
-
+    <div id="cuisines" class="section">
+        <h1>Browse Cuisines</h1>
+        <div class="cuisine-container">
+            <a class="cuisine" href="foodplaces/Halal.html">Halal</a>
+            <a class="cuisine" href="foodplaces/indian.html">Indian</a>
+            <a class="cuisine" href="foodplaces/korean.html">Korean</a>
+            <a class="cuisine" href="foodplaces/chinese.html">Chinese</a>
+            <a class="cuisine" href="foodplaces/japanese.html">Japanese</a>
+            <a class="cuisine" href="foodplaces/vietnamese.html">Vietnamese</a>
+            <a class="cuisine" href="foodplaces/mediterranean.html">Mediterranean</a>
+            <a class="cuisine" href="foodplaces/mexican.html">Mexican</a>
+            <a class="cuisine" href="foodplaces/pizza.html">Pizza</a>
+            <a class="cuisine" href="foodplaces/burgers.html">Burgers</a>
+            <a class="cuisine" href="foodplaces/cafes.html">Cafes</a>
+        </div>
+    </div>
+    
+    <div id="groceries" class="section">
+        <h1>Browse Grocery Stores</h1>
+        <div class="grocery-container">
+            <a class="grocery" href="https://www.nofrills.ca/en" target="_blank">Nofrills</a>
+            <a class="grocery" href="https://www.sobeys.com/en/" target="_blank">Sobeys</a>
+            <a class="grocery" href="https://www.costco.ca/" target="_blank">Costco</a>
+            <a class="grocery" href="https://www.realcanadiansuperstore.ca/en" target="_blank">Superstore</a>
+            <a class="grocery" href="https://www.tntsupermarket.com/eng/" target="_blank">T&T Supermarket</a>
+            <a class="grocery" href="https://www.safeway.ca/" target="_blank">Safeway</a>
+        </div>
     </div>
 </body>
 </html>
