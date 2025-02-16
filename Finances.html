@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header class="banner">
-        <img src="interlinked_logo.png" class="logo" alt="Logo">
-        
-        <style>
-            .logo {
-    position: absolute;
-    top: 5px;
-    left: 688px;
-    width: 100px;
-    }
-        </style>
-    </header>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +8,39 @@
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(to right, #f4edf5, #c9b5e6);
-            text-align: center;
-            padding: 100px;
             color: rgb(123, 85, 156);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align content to the left */
+            padding-left: 20px; /* Add some padding to the left */
+            position: relative; /* Required for absolute positioning */
+        }
+        .banner {
+            display: flex;
+            justify-content: flex-start; /* Align items to the left */
+            align-items: center;
+            width: 100%;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            width: 100px;
+            margin-right: 20px; /* Add space between logo and title */
+        }
+        .banner h1 {
+            font-size: 2em;
+            color: rgb(123, 85, 156);
+            margin: 0; /* Remove default margin */
+        }
+        .right-image {
+            width: 500px;
+            position: absolute; /* Position the image absolutely */
+            top: 50%; /* Move to the middle vertically */
+            right: 20px; /* Position on the right side */
+            transform: translateY(-40%); /* Center vertically */
         }
         h1 {
             font-size: 2.5em;
@@ -36,11 +53,13 @@
             background: rgba(255, 255, 255, 0.2);
             border-radius: 15px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 80%; 
+            max-width: 800px; 
         }
         .button-container {
             display: flex;
-            justify-content: center;
-            gap: 15px;
+            justify-content: flex-start; 
+            gap: 20px;
             flex-wrap: wrap;
             margin-top: 20px;
         }
@@ -57,9 +76,23 @@
             background: rgba(0, 0, 0, 0.8);
             transform: scale(1.1);
         }
+        .footer {
+            padding: 5px;
+            width: 100%;
+            text-align: center;
+            margin-top: auto; 
+        }
     </style>
 </head>
 <body>
+
+    <header class="banner">
+        <img src="interlinked_logo.png" class="logo" alt="Logo">
+        <h1>Finances</h1> <!-- Added Finances title beside the logo -->
+    </header>
+
+    <!-- Right Image -->
+    <img src="finance.png" class="right-image" alt="Right Image">
 
     <div class="section">
         <h1>Taxes</h1>
@@ -83,6 +116,7 @@
             <a class="button" href="https://www.intact.ca/en/personal-insurance" target="_blank">Intact</a>
         </div>
     </div>
+
     <footer class="footer">
         <p>&copy; 2025 Interlinked</p>
     </footer>
