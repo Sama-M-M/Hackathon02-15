@@ -1,10 +1,93 @@
 <!DOCTYPE html>
-<html>
-    <title> Vietnamese </title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnamese Cuisine</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .restaurant-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .restaurant {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: black;
+        }
+
+        .restaurant:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .restaurant img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .restaurant h2 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .restaurant p {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+<body>
+
     <h1>Local Vietnamese Restaurants</h1>
-    <a href="https://bolsa-calgary.com/"> Bolsa Restaurant </a>
-    <a href="https://www.quynh.ca/">Quynh Vietnamese Cuisine</a>
-    <a href="https://www.vansoncuisine.ca/">Van Son </a>
 
+    <div class="restaurant-list">
+        <a href="https://bolsa-calgary.com/" class="restaurant" target="_blank">
+            <img src="bolsa.jpg" alt="Bolsa Restaurant">
+            <h2>Bolsa Restaurant</h2>
+            <p>Authentic Vietnamese Cuisine</p>
+        </a>
 
+        <a href="https://www.quynh.ca/" class="restaurant" target="_blank">
+            <img src="Quynh.png" alt="Quynh Vietnamese Cuisine">
+            <h2>Quynh Vietnamese Cuisine</h2>
+            <p>Traditional Vietnamese Flavors</p>
+        </a>
+
+        <a href="https://www.vansoncuisine.ca/" class="restaurant" target="_blank">
+            <img src="vanson.jpg" alt="Van Son">
+            <h2>Van Son</h2>
+            <p>Fresh Vietnamese Delights</p>
+        </a>
+    </div>
+
+</body>
 </html>
