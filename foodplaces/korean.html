@@ -1,8 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Korean Cuisine</title>
-    <h1>Tasty Korean Restaurants</h1>
-    <a href="https://seoulfried.com/">Seoul Fried Chicken</a> Korean Fried Chicken
-    <a href="https://o-mykimbap.com/">O-My Kimbap</a> <p>Korean food company</p>
-    <a href="https://gogikoreanbbq.ca/">Gogi Korean BBQ</a> <p>Korean BBQ</p>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .restaurant-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .restaurant {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: black;
+        }
+
+        .restaurant:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .restaurant img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .restaurant h2 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .restaurant p {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Tasty Korean Restaurants </h1>
+
+    <div class="restaurant-list">
+        <a href="https://seoulfried.com/" class="restaurant" target="_blank">
+            <img src="seoul.png" alt="Seoul Fried Chicken">
+            <h2>Seoul Fried Chicken</h2>
+            <p>Korean Fried Chicken</p>
+        </a>
+
+        <a href="https://o-mykimbap.com/" class="restaurant" target="_blank">
+            <img src="okim.png" alt="O-My Kimbap">
+            <h2>O-My Kimbap</h2>
+            <p>Korean food company</p>
+        </a>
+
+        <a href="https://gogikoreanbbq.ca/" class="restaurant" target="_blank">
+            <img src="gogi.png" alt="Gogi Korean BBQ">
+            <h2>Gogi Korean BBQ</h2>
+            <p>Authentic Korean BBQ</p>
+        </a>
+    </div>
+
+</body>
 </html>
